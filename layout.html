@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=x-width, initial-scale=1.0">
+  <title>TravelQ - Home</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="intro.css" />
+  <!--Font-->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <!--Javascript-->
+  <script src="layout.js"></script>
+  <!--Button to move up-->
+  <script src="backToTop.js"></script>
+
+  
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <header class="bg-white shadow-md sticky top-0 z-20">
+    <div class="container mx-auto flex items-center justify-between p-4">
+      <h1 class="text-2xl font-bold text-blue-600">TravelQ</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#home.html" class="hover:text-blue-500">Home</a></li>
+          <li><a href="message.html" class="hover:text-blue-500">Message</a></li>
+          <li><a href="#planner" class="hover:text-blue-500">Trip Planner</a></li>
+          <li><a href="#Profile" class="hover:text-blue-500">Profile</a></li>
+        </ul>
+      </nav> 
+    </div>
+  </header>
+
+  <!--First img block-->
+    <div class="hero" style="background-image: url('img/avt.jpg');">
+        <div class="overlay">
+            <h1>Find your next travel<br><span>experience</span></h1>
+        </div>
+        <div class="categories">
+            <div class="category active culture" onclick="selectCategory(this)">Culture</div>
+            <div class="category nature" onclick="selectCategory(this)">Nature</div>
+            <div class="indicator"></div>
+        </div>
+    </div>
+  <!--Feeds-->
+    <div class="feeds">
+        <div class="feed-card">
+            <img class="feed-img" src="img/halongbay.jpg" alt="Ha Long Bay">
+            <div class="feed-info">
+            <p class="feed-category">ADVENTURE</p>
+            <h3>Ha Long Bay</h3>
+            <p class="feed-duration">2 days</p>
+            <p class="feed-price">From 2.399.000 per person</p>
+        </div>
+    </div>
+  <!--Repeat for other-->
+    </div>
+
+  
+  <script src="src/js/main.js"></script>
+</body>
+</html>
